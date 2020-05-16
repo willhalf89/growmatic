@@ -133,6 +133,8 @@ Node-Red Dashboard UI :1880/ui
 
 Nodes:
 
+dashboard
+
 gate
 
 ui_led
