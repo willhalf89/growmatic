@@ -24,11 +24,11 @@ Boot Pi.
 
 sudo raspi-config
 
-ENABLE SPI
+> ENABLE SPI
 
-ENABLE I2C
+> ENABLE I2C
 
-CHANGE TIMEZONE
+> CHANGE TIMEZONE
 
 -----------------------------------------------------------------------------------------------------------------
 Install Prerequisites 
