@@ -38,16 +38,17 @@ sudo reboot now
 BMP180
 ------------------------------------------------------------------------------------------------------------------
 
-sudo apt-get update
+sudo apt-get -y update
 
+sudo apt-get -y install build-essential python-pip python-dev python-smbus git
 
-sudo apt-get -y install git build-essential python-dev python-smbus
-
-
+pip install --upgrade setuptools pip
 
 git clone https://github.com/adafruit/Adafruit_Python_BMP.git
 
 cd Adafruit_Python_BMP
+
+sudo python setup.py install
 
 git checkout update_ez_install
 
@@ -57,13 +58,15 @@ wget https://pypi.python.org/packages/source/s/setuptools/setuptools-3.5.1.zip
 
 sudo python setup.py install
 
-sudo apt-get -y install python-pip
-
 sudo pip install s3cmd
 
-sudo apt-get -y install build-essential python-pip python-dev python-smbus git
-
 cd ~
+
+git clone https://github.com/adafruit/Adafruit_Python_GPIO.git
+
+cd Adafruit_Python_GPIO
+
+sudo python setup.py install
 
 cd Adafruit_Python_GPIO
 
