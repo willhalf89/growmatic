@@ -118,6 +118,30 @@ sudo systemctl start grafana-server
 
 sudo systemctl enable grafana-server.service
 
+(EDIT CONFIG)
+
+sudo nano /etc/grafana/grafana.ini
+
+[auth]
+# Set to true to disable (hide) the login form, useful if you use OAuth
+#disable_login_form = false 
+disable_login_form = true
+Change disable_login_form to true.
+
+Enable anonymous access:
+
+[auth.anonymous]
+# enable anonymous access 
+enabled = true
+Specify the organization:
+
+# specify organization name that should be used for unauthenticated users
+org_name = YOUR_ORG_NAME_HERE
+Restart Grafana and you should be able to see the Grafana dashboard. If not, just change your org role from Viewer to Editor:
+
+# specify role for unauthenticated users
+org_role = Editor
+
 sudo reboot now
 
 ------------------------------------------------------------------------------------------------------------------
