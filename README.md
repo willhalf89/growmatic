@@ -56,11 +56,11 @@ wget https://pypi.python.org/packages/source/s/setuptools/setuptools-3.5.1.zip
 
 sudo python setup.py install
 
-sudo apt-get install python-pip
+sudo apt-get -y install python-pip
 
 sudo pip install s3cmd
 
-sudo apt-get install build-essential python-pip python-dev python-smbus git
+sudo apt-get -y install build-essential python-pip python-dev python-smbus git
 
 cd ~
 
