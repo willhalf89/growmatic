@@ -86,8 +86,6 @@ cd ~
 InfluxDB
 ------------------------------------------------------------------------------------------------------------------
 
-(RUN AS ONE COMMAND)
-
 wget -qO- https://repos.influxdata.com/influxdb.key | sudo apt-key add -
 
 source /etc/os-release
