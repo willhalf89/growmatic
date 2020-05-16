@@ -42,30 +42,31 @@ sudo apt-get -y update
 
 sudo apt-get -y install build-essential python-pip python-dev python-smbus git
 
-pip install --upgrade setuptools pip
+sudo pip install --upgrade setuptools pip
 
-git clone https://github.com/adafruit/Adafruit_Python_BMP.git
+(Copy/Paste All)
+
+sudo git clone https://github.com/adafruit/Adafruit_Python_BMP.git
 
 cd Adafruit_Python_BMP
 
 sudo python setup.py install
 
-git checkout update_ez_install
+sudo git checkout update_ez_install
 
 sudo rm setuptools-3.5.1.zip
 
-wget https://pypi.python.org/packages/source/s/setuptools/setuptools-3.5.1.zip
+sudo wget https://pypi.python.org/packages/source/s/setuptools/setuptools-3.5.1.zip
 
-pip install --upgrade setuptools pip
+sudo pip install --upgrade setuptools pip
 
 sudo python setup.py install
-
 
 sudo pip install s3cmd
 
 cd ~
 
-git clone https://github.com/adafruit/Adafruit_Python_GPIO.git
+sudo git clone https://github.com/adafruit/Adafruit_Python_GPIO.git
 
 cd Adafruit_Python_GPIO
 
