@@ -48,17 +48,21 @@ wget https://raw.githubusercontent.com/willhalf89/growmatic/master/growmatic.py
 5) PCF8591 ADC + BMP180
 ------------------------------------------------------------------------------------------------------------------
 
-wget https://github.com/sunfounder/SunFounder_SensorKit_for_RPi2/blob/master/Python/PCF8591.py
+wget https://raw.githubusercontent.com/sunfounder/SunFounder_SensorKit_for_RPi2/master/Python/PCF8591.py
 
 sudo apt-get update
 
-sudo apt install git-all
+sudo apt-get install build-essential python-pip python-dev python-smbus git
 
-sudo apt-get install build-essential python-dev python-smbus
+git clone https://github.com/adafruit/Adafruit_Python_GPIO.git
 
-cd ~
+cd Adafruit_Python_GPIO
 
-git clone https://github.com/sunfounder/Adafruit_Python_BMP.git
+sudo python setup.py install
+
+sudo apt-get install git build-essential python-dev python-smbus
+
+git clone https://github.com/adafruit/Adafruit_Python_BMP.git
 
 cd Adafruit_Python_BMP
 
