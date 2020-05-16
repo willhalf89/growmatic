@@ -133,24 +133,12 @@ Node-Red Dashboard UI :1880/ui
 
 Nodes:
 
-ui_gauge
-
 gate
-
-ui_button
 
 ui_led
 
 influxdb out
 
-ui_template
-
-ui_valuetrail
-
-ui_group
-
 influxdb
-
-ui_tab
 
 SAMPLE NODE RED JSON:
