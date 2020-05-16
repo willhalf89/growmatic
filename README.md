@@ -48,17 +48,11 @@ sudo reboot now
 BMP180
 ------------------------------------------------------------------------------------------------------------------
 
-sudo apt install git
-
-sudo apt-get install build-essential python-dev python-smbus
-
-(RUN AS ONE COMMAND)
-
-cd ~
-
-git clone https://github.com/sunfounder/Adafruit_Python_BMP.git
+"sudo apt-get update
+sudo apt-get install git build-essential python-dev python-smbus
+git clone https://github.com/adafruit/Adafruit_Python_BMP.git
 cd Adafruit_Python_BMP
-sudo python setup.py install
+sudo python setup.py install"
 
 ------------------------------------------------------------------------------------------------------------------
 Node-Red
