@@ -56,7 +56,15 @@ wget https://pypi.python.org/packages/source/s/setuptools/setuptools-3.5.1.zip
 
 sudo python setup.py install
 
-end 
+sudo apt-get update
+
+sudo apt-get install build-essential python-pip python-dev python-smbus git
+
+git clone https://github.com/adafruit/Adafruit_Python_GPIO.git
+
+cd Adafruit_Python_GPIO
+
+sudo python setup.py install
 
 ------------------------------------------------------------------------------------------------------------------
 Python Script + PCF8591 ADC 
