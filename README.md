@@ -19,7 +19,7 @@ https://www.raspberrypi.org/downloads/raspbian/
 2) Edit and copy Wifi and SSH files to "boot" partition.
 -----------------------------------------------------------------------------------------------------------------
 
-https://drive.google.com/file/d/1PmxlABGT528WmLeFJhZBihi1twTcLuoq/view?usp=sharing
+https://github.com/willhalf89/growmatic/raw/master/RPI%20Headless.zip
 
 -----------------------------------------------------------------------------------------------------------------
 3) Boot Pi.
