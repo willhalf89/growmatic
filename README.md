@@ -42,7 +42,7 @@ sudo reboot now
 4) Python Script
 ------------------------------------------------------------------------------------------------------------------
 
-wget https://github.com/willhalf89/growmatic/blob/master/growmatic.py
+wget https://raw.githubusercontent.com/willhalf89/growmatic/master/growmatic.py
 
 ------------------------------------------------------------------------------------------------------------------
 5) PCF8591 ADC + BMP180
