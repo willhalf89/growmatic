@@ -27,10 +27,15 @@ https://github.com/willhalf89/growmatic/raw/master/RPI%20Headless.zip
 -----------------------------------------------------------------------------------------------------------------
 
 sudo raspi-config
+
 ENABLE SPI
+
 ENABLE I2C
+
 CHANGE LOCALE
+
 CHANGE TIMEZONE
+
 sudo reboot now
 
 ------------------------------------------------------------------------------------------------------------------
