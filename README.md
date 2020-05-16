@@ -52,6 +52,8 @@ wget https://github.com/sunfounder/SunFounder_SensorKit_for_RPi2/blob/master/Pyt
 
 cd ~
 
+sudo apt install git-all
+
 git clone https://github.com/sunfounder/Adafruit_Python_BMP.git
 
 cd Adafruit_Python_BMP
