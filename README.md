@@ -38,7 +38,7 @@ sudo apt-get -y update
 
 sudo apt-get -y install build-essential python-pip python-dev python-smbus git
 
-end
+cd ~
 
 (Copy/Paste All)
 
@@ -78,7 +78,7 @@ cd Adafruit_Python_GPIO
 
 sudo python setup.py install
 
-end
+cd ~
 
 ------------------------------------------------------------------------------------------------------------------
 Node-Red
