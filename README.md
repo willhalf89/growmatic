@@ -49,9 +49,13 @@ wget https://github.com/willhalf89/growmatic/blob/master/growmatic.py
 ------------------------------------------------------------------------------------------------------------------
 
 wget https://github.com/sunfounder/SunFounder_SensorKit_for_RPi2/blob/master/Python/PCF8591.py
+
 cd ~
+
 git clone https://github.com/sunfounder/Adafruit_Python_BMP.git
+
 cd Adafruit_Python_BMP
+
 sudo python setup.py install
 
 ------------------------------------------------------------------------------------------------------------------
@@ -59,7 +63,9 @@ sudo python setup.py install
 ------------------------------------------------------------------------------------------------------------------
 
 bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+
 sudo systemctl enable nodered.service
+
 sudo reboot now
 
 ------------------------------------------------------------------------------------------------------------------
@@ -75,10 +81,15 @@ sudo systemctl start influxdb
 sudo systemctl enable influxdb.service
 
 influx
+
 create database Growmatic
+
 use Growmatic
+
 create user grafana with password 'awesome89' with all privileges
+
 grant all privileges on Growmatic to grafana
+
 exit
 
 sudo reboot now
@@ -88,8 +99,11 @@ echo "deb https://packages.grafana.com/oss/deb stable main" | sudo tee /etc/apt/
 sudo apt update && sudo apt install -y grafana
 
 sudo systemctl unmask grafana-server.service
+
 sudo systemctl start grafana-server
+
 sudo systemctl enable grafana-server.service
+
 sudo reboot now
 
 ------------------------------------------------------------------------------------------------------------------
