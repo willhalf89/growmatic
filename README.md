@@ -44,6 +44,8 @@ sudo apt-get -y install build-essential python-pip python-dev python-smbus git
 
 sudo pip install --upgrade setuptools pip
 
+sudo git checkout update_ez_install
+
 (Copy/Paste All)
 
 sudo git clone https://github.com/adafruit/Adafruit_Python_BMP.git
@@ -52,13 +54,9 @@ cd Adafruit_Python_BMP
 
 sudo python setup.py install
 
-sudo git checkout update_ez_install
-
 sudo rm setuptools-3.5.1.zip
 
 sudo wget https://pypi.python.org/packages/source/s/setuptools/setuptools-3.5.1.zip
-
-sudo pip install --upgrade setuptools pip
 
 sudo python setup.py install
 
