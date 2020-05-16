@@ -42,13 +42,21 @@ sudo apt-get update
 
 sudo apt-get -y install git build-essential python-dev python-smbus
 
+sudo python -m pip install --upgrade pip setuptools wheel
+
 git clone https://github.com/adafruit/Adafruit_Python_BMP.git
 
 cd Adafruit_Python_BMP
 
+git checkout update_ez_install
+
+sudo rm setuptools-3.5.1.zip
+
+wget https://pypi.python.org/packages/source/s/setuptools/setuptools-3.5.1.zip
+
 sudo python setup.py install
 
-end
+end 
 
 ------------------------------------------------------------------------------------------------------------------
 Python Script + PCF8591 ADC 
