@@ -54,6 +54,10 @@ sudo apt-get update
 
 sudo apt install git-all
 
+sudo apt-get install build-essential python-dev python-smbus
+
+cd ~
+
 git clone https://github.com/sunfounder/Adafruit_Python_BMP.git
 
 cd Adafruit_Python_BMP
