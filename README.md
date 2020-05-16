@@ -42,8 +42,6 @@ sudo apt-get -y install build-essential python-pip python-dev python-smbus git
 
 cd ~
 
-(Copy/Paste All)
-
 sudo pip install --upgrade setuptools pip
 
 sudo reboot now
