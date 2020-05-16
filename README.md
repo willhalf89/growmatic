@@ -32,11 +32,7 @@ ENABLE I2C
 
 CHANGE TIMEZONE
 
-sudo apt-get upgrade
-
 sudo apt-get update
-
-sudo reboot now
 
 ------------------------------------------------------------------------------------------------------------------
 Python Script + PCF8591 ADC 
@@ -45,6 +41,8 @@ Python Script + PCF8591 ADC
 wget https://raw.githubusercontent.com/willhalf89/growmatic/master/growmatic.py
 
 wget https://raw.githubusercontent.com/sunfounder/SunFounder_SensorKit_for_RPi2/master/Python/PCF8591.py
+
+sudo reboot now
 
 ------------------------------------------------------------------------------------------------------------------
 BMP180
