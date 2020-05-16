@@ -100,7 +100,7 @@ sudo systemctl start influxdb
 
 sudo systemctl enable influxdb.service
 
-(RUN)
+sudo reboot now
 
 influx
 
