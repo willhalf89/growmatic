@@ -32,9 +32,11 @@ ENABLE SPI
 
 ENABLE I2C
 
-CHANGE LOCALE
-
 CHANGE TIMEZONE
+
+sudo apt-get upgrade
+
+sudo apt-get update
 
 sudo reboot now
 
