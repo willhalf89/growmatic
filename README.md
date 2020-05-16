@@ -26,7 +26,7 @@ sudo raspi-config
 
 > ENABLE SPI
 
-> ENABLE I2C
+$ ENABLE I2C
 
 > CHANGE TIMEZONE
 
