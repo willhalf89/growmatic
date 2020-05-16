@@ -32,7 +32,18 @@ ENABLE I2C
 
 CHANGE TIMEZONE
 
+sudo reboot now
+
+------------------------------------------------------------------------------------------------------------------
+BMP180
+------------------------------------------------------------------------------------------------------------------
+
 sudo apt-get update
+sudo apt-get -y install git build-essential python-dev python-smbus
+git clone https://github.com/adafruit/Adafruit_Python_BMP.git
+cd Adafruit_Python_BMP
+sudo python setup.py install
+end
 
 ------------------------------------------------------------------------------------------------------------------
 Python Script + PCF8591 ADC 
@@ -43,16 +54,6 @@ wget https://raw.githubusercontent.com/willhalf89/growmatic/master/growmatic.py
 wget https://raw.githubusercontent.com/sunfounder/SunFounder_SensorKit_for_RPi2/master/Python/PCF8591.py
 
 sudo reboot now
-
-------------------------------------------------------------------------------------------------------------------
-BMP180
-------------------------------------------------------------------------------------------------------------------
-
-sudo apt-get update
-sudo apt-get install git build-essential python-dev python-smbus
-git clone https://github.com/adafruit/Adafruit_Python_BMP.git
-cd Adafruit_Python_BMP
-sudo python setup.py install
 
 ------------------------------------------------------------------------------------------------------------------
 Node-Red
