@@ -139,7 +139,7 @@ gate
 
 ui_led
 
-influxdb out
+ui_valuetrail
 
 influxdb
 
