@@ -120,9 +120,9 @@ sudo reboot now
 Grafana
 ------------------------------------------------------------------------------------------------------------------
 
-wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
-echo "deb https://packages.grafana.com/oss/deb stable main" | sudo tee /etc/apt/sources.list.d/grafana.list
-sudo apt update && sudo apt install -y grafana
+sudo apt-get install -y adduser libfontconfig1
+wget https://dl.grafana.com/oss/release/grafana-rpi_6.7.3_armhf.deb
+sudo dpkg -i grafana-rpi_6.7.3_armhf.deb
 
 sudo systemctl unmask grafana-server.service
 
