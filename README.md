@@ -54,17 +54,13 @@ wget https://raw.githubusercontent.com/sunfounder/SunFounder_SensorKit_for_RPi2/
 
 sudo apt-get update
 
-sudo apt-get install build-essential python-pip python-dev python-smbus git
+(RUN AS ONE COMMAND)
 
-git clone https://github.com/adafruit/Adafruit_Python_GPIO.git
+sudo apt-get install build-essential python-dev python-smbus
 
-cd Adafruit_Python_GPIO
+cd ~
 
-sudo python setup.py install
-
-sudo apt-get install git build-essential python-dev python-smbus
-
-git clone https://github.com/adafruit/Adafruit_Python_BMP.git
+git clone https://github.com/sunfounder/Adafruit_Python_BMP.git
 
 cd Adafruit_Python_BMP
 
