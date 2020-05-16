@@ -50,7 +50,7 @@ wget https://github.com/willhalf89/growmatic/blob/master/growmatic.py
 
 wget https://github.com/sunfounder/SunFounder_SensorKit_for_RPi2/blob/master/Python/PCF8591.py
 
-cd ~
+sudo apt-get update
 
 sudo apt install git-all
 
