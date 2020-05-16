@@ -4,7 +4,6 @@ BUILD + INSTALL GROWMATIC 2.0
 -----------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------
 GPIO Pins:
->
 -----------------------------------------------------------------------------------------------------------------
 Use Balena etcher to copy latest "Raspbian Buster Lite" image to SD.
 -----------------------------------------------------------------------------------------------------------------
@@ -163,10 +162,8 @@ sudo reboot now
 Node-Red
 ------------------------------------------------------------------------------------------------------------------
 
-bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
-
+>bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
 sudo systemctl enable nodered.service
-
 sudo reboot now
 
 ------------------------------------------------------------------------------------------------------------------
