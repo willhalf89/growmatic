@@ -48,6 +48,8 @@ sudo reboot now
 BMP180
 ------------------------------------------------------------------------------------------------------------------
 
+sudo apt install git
+
 sudo apt-get install build-essential python-dev python-smbus
 
 (RUN AS ONE COMMAND)
