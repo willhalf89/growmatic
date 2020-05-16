@@ -81,16 +81,6 @@ sudo python setup.py install
 cd ~
 
 ------------------------------------------------------------------------------------------------------------------
-Node-Red
-------------------------------------------------------------------------------------------------------------------
-
-bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
-
-sudo systemctl enable nodered.service
-
-sudo reboot now
-
-------------------------------------------------------------------------------------------------------------------
 InfluxDB + Grafana
 ------------------------------------------------------------------------------------------------------------------
 
@@ -159,6 +149,16 @@ Specify the organization:
 org_name = YOUR_ORG_NAME_HERE
 
 org_role = Editor
+
+sudo reboot now
+
+------------------------------------------------------------------------------------------------------------------
+Node-Red
+------------------------------------------------------------------------------------------------------------------
+
+bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+
+sudo systemctl enable nodered.service
 
 sudo reboot now
 
