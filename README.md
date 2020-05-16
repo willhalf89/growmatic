@@ -46,6 +46,8 @@ sudo apt-get -y install build-essential python-pip python-dev python-smbus git
 
 sudo pip install --upgrade setuptools pip
 
+sudo reboot now
+
 ------------------------------------------------------------------------------------------------------------------
 Python Script + PCF8591 + ADC BMP180
 ------------------------------------------------------------------------------------------------------------------
