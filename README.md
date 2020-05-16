@@ -56,7 +56,10 @@ sudo rm setuptools-3.5.1.zip
 
 wget https://pypi.python.org/packages/source/s/setuptools/setuptools-3.5.1.zip
 
+pip install --upgrade setuptools pip
+
 sudo python setup.py install
+
 
 sudo pip install s3cmd
 
