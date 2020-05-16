@@ -36,8 +36,7 @@ sudo reboot now
 4) Python Script
 ------------------------------------------------------------------------------------------------------------------
 
-wget http://192.168.1.1/storage/growmatic.txt
-mv growmatic.txt growmatic.py
+wget https://github.com/willhalf89/growmatic/blob/master/growmatic.py
 
 ------------------------------------------------------------------------------------------------------------------
 5) PCF8591 ADC + BMP180
