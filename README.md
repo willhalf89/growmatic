@@ -9,7 +9,7 @@ ________________________________________________________________________________
 PINS:
 
 -----------------------------------------------------------------------------------------------------------------
-1) Use Balena etcher to copy latest "Raspbian Buster Lite" image to SD.
+Use Balena etcher to copy latest "Raspbian Buster Lite" image to SD.
 -----------------------------------------------------------------------------------------------------------------
 
 https://www.balena.io/etcher/
@@ -17,13 +17,13 @@ https://www.balena.io/etcher/
 https://www.raspberrypi.org/downloads/raspbian/
 
 -----------------------------------------------------------------------------------------------------------------
-2) Edit and copy Wifi and SSH files to "boot" partition.
+Edit and copy Wifi and SSH files to "boot" partition.
 -----------------------------------------------------------------------------------------------------------------
 
 https://github.com/willhalf89/growmatic/raw/master/RPI%20Headless.zip
 
 -----------------------------------------------------------------------------------------------------------------
-3) Boot Pi.
+Boot Pi.
 -----------------------------------------------------------------------------------------------------------------
 
 sudo raspi-config
@@ -41,7 +41,7 @@ sudo apt-get update
 sudo reboot now
 
 ------------------------------------------------------------------------------------------------------------------
-4) Python Script + PCF8591 ADC 
+Python Script + PCF8591 ADC 
 ------------------------------------------------------------------------------------------------------------------
 
 wget https://raw.githubusercontent.com/willhalf89/growmatic/master/growmatic.py
@@ -49,7 +49,7 @@ wget https://raw.githubusercontent.com/willhalf89/growmatic/master/growmatic.py
 wget https://raw.githubusercontent.com/sunfounder/SunFounder_SensorKit_for_RPi2/master/Python/PCF8591.py
 
 ------------------------------------------------------------------------------------------------------------------
-5) BMP180
+BMP180
 ------------------------------------------------------------------------------------------------------------------
 
 (RUN AS ONE COMMAND)
@@ -65,7 +65,7 @@ cd Adafruit_Python_BMP
 sudo python setup.py install
 
 ------------------------------------------------------------------------------------------------------------------
-6) Node-Red
+Node-Red
 ------------------------------------------------------------------------------------------------------------------
 
 bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
@@ -75,7 +75,7 @@ sudo systemctl enable nodered.service
 sudo reboot now
 
 ------------------------------------------------------------------------------------------------------------------
-7) InfluxDB + Grafana
+InfluxDB + Grafana
 ------------------------------------------------------------------------------------------------------------------
 
 (RUN AS ONE COMMAND)
