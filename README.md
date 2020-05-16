@@ -121,7 +121,9 @@ Grafana
 ------------------------------------------------------------------------------------------------------------------
 
 sudo apt-get install -y adduser libfontconfig1
+
 wget https://dl.grafana.com/oss/release/grafana-rpi_6.7.3_armhf.deb
+
 sudo dpkg -i grafana-rpi_6.7.3_armhf.deb
 
 sudo systemctl unmask grafana-server.service
