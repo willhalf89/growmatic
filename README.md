@@ -38,8 +38,6 @@ sudo apt-get -y install build-essential python-pip python-dev python-smbus git
 
 sudo pip install --upgrade setuptools pip
 
-sudo git checkout update_ez_install
-
 sudo reboot now
 
 ------------------------------------------------------------------------------------------------------------------
@@ -65,10 +63,6 @@ sudo pip install s3cmd
 cd ~
 
 sudo git clone https://github.com/adafruit/Adafruit_Python_GPIO.git
-
-cd Adafruit_Python_GPIO
-
-sudo python setup.py install
 
 cd Adafruit_Python_GPIO
 
