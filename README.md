@@ -40,9 +40,8 @@ BMP180
 
 sudo apt-get update
 
-sudo apt-get -y install git build-essential python-dev python-smbus
 
-sudo python -m pip install --upgrade pip setuptools wheel
+sudo apt-get install git build-essential python-dev python-smbus
 
 git clone https://github.com/adafruit/Adafruit_Python_BMP.git
 
