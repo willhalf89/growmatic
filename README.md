@@ -83,7 +83,7 @@ sudo python setup.py install
 cd ~
 
 ------------------------------------------------------------------------------------------------------------------
-InfluxDB + Grafana
+InfluxDB
 ------------------------------------------------------------------------------------------------------------------
 
 (RUN AS ONE COMMAND)
@@ -117,6 +117,10 @@ grant all privileges on Growmatic to grafana
 exit
 
 sudo reboot now
+
+------------------------------------------------------------------------------------------------------------------
+Grafana
+------------------------------------------------------------------------------------------------------------------
 
 wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
 echo "deb https://packages.grafana.com/oss/deb stable main" | sudo tee /etc/apt/sources.list.d/grafana.list
