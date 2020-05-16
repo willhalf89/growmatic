@@ -132,27 +132,25 @@ sudo systemctl start grafana-server
 
 sudo systemctl enable grafana-server.service
 
-(EDIT CONFIG)
+> (EDIT CONFIG)
 
 sudo nano /etc/grafana/grafana.ini
 
-[auth]
+[Security]
 
-#disable_login_form = false 
+admin_user = admin
 
-disable_login_form = true
+admin_password = admin
 
-Change disable_login_form to true.
+allow_embedding = true
 
-Enable anonymous access:
+disable_brute_force_login_protection = true
 
-[auth.anonymous]
+[Anonymous Auth]
 
-enabled = true
+enabled = true 
 
-Specify the organization:
-
-org_name = YOUR_ORG_NAME_HERE
+org_name = Main Org.
 
 org_role = Editor
 
